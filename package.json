@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "lowdb": "^1.0.0",
+    "request": "^2.88.0"
+  },
+  "name": "huabandl",
+  "description": "花瓣网图片下载工具",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cansonzheng/huabanDL.git"
+  },
+  "keywords": [
+    "花瓣下载",
+    "花瓣备份"
+  ],
+  "author": "Canson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cansonzheng/huabanDL/issues"
+  },
+  "homepage": "https://github.com/cansonzheng/huabanDL#readme"
+}
