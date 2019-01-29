@@ -5,6 +5,7 @@ const fs=require('fs');
 
 // 启动
 async function start(){
+  fs.mkdir('./download/',err=>false);
   try{
     let u=await login();
     fs.mkdir('./download/'+u.urlname,err=>false);
