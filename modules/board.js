@@ -86,7 +86,8 @@ const o={
             return;
           }
           let max='';
-          fs.mkdir(`./download/${user.urlname}/${data.board.title.trim().replace(/[\\\/\:\*\?\"\<\>\|\'\n\u200b]/g,'').substring(0,20)}`,err=>false);
+          data.board.title=data.board.title.trim().replace(/[\\\/\:\*\?\"\<\>\|\'\n\u200b]/g,'').substring(0,20);
+          fs.mkdir(`./download/${user.urlname}/${data.board.title}`,err=>false);
           data.board.pins.forEach(v=>{
             arr.push({
               id:v.pin_id,
